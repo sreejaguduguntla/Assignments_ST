@@ -1,0 +1,55 @@
+### Read all users
+GET http://localhost:4001/user-api/users
+
+###read user by ObjectID => since it is always unique
+GET http://localhost:4001/user-api/users/697dbab270d45782fa5fbad4
+
+### Create user
+POST http://localhost:4001/user-api/users
+Content-Type: application/json
+
+{
+  "username": "Sniggy",
+  "password": "Snigdha",
+  "age": 20
+}
+
+###Update user
+PUT http://localhost:4001/user-api/users/697dbab270d45782fa5fbad4
+Content-Type: application/json
+
+{
+  "username": "Sniggy",
+  "password": "Snigdha",
+  "age": 21
+}
+
+### delete user by its ObjectId
+DELETE http://localhost:4001/user-api/users/697dbab270d45782fa5fbad4
+
+
+############################### PRODUCT APIS ##############################
+
+### Read all products
+GET http://localhost:4001/product-api/products
+
+### Create Product
+POST http://localhost:4001/product-api/products
+Content-Type: application/json
+
+{
+  "productname": "android",
+  "price": 50000
+}
+
+### read product by productID
+GET http://localhost:4001/product-api/products/697dd001f6a0b6a045c425c5
+
+### Update product by productID
+PUT http://localhost:4001/product-api/products/697dd001f6a0b6a045c425c5
+Content-Type: application/json
+
+{
+  "productname": "android",
+  "price": 70000
+}
