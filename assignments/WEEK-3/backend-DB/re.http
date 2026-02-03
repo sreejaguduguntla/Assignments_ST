@@ -9,8 +9,8 @@ POST http://localhost:4001/user-api/users
 Content-Type: application/json
 
 {
-  "username": "Sniggy",
-  "password": "Snigdha",
+  "username": "Sreeja",
+  "password": "Sreeja",
   "age": 20
 }
 
@@ -53,3 +53,15 @@ Content-Type: application/json
   "productname": "android",
   "price": 70000
 }
+
+### User authentication (login) Req
+POST http://localhost:4001/user-api/auth
+Content-Type: application/json
+
+{
+  "username": "Sreeja",
+  "password": "Sreeja"
+}
+
+### Request for protected route
+GET http://localhost:4001/user-api/test
